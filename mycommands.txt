@@ -1,0 +1,29 @@
+    1  ls -l
+    2  hadoopp fs -mkdir mrdata
+    3  hadoop fs -mkdir mrdata
+    4  ls -l
+    5  hadoop fs -ls
+    6  hadoop fs -put mrin* mrdata
+    7  hadoop fs -ls mrdata
+    8  -file ./mrmapper.py -mapper ./mrmapper.py -file ./mrreducer.py -reducer ./mrreducer.py -input mrdata -output mrout1
+    9  mapred streaming -file ./mrmapper.py -mapper ./mrmapper.py -file ./mrreducer.py -reducer ./mrreducer.py -input mrdata -output mrout1
+   10  pwd
+   11  hadoop fs -ls /user
+   12  hadoop fs -ls /user/hadoop
+   13  pwd
+   14  ls -l
+   15  hadoop fs -ls mrdata
+   16  ls -l *.py
+   17  hadoop fs -ls /
+   18  hadoop fs -ls /user
+   19  hadoop fs -ls /user/hadoop
+   20  hadoop fs -ls /user/hadoop/mrdata
+   21  ls -l *.py
+   22  mapred streaming -file ./mrmapper.py -mapper ./mrmapper.py -file ./mrreducer.py -reducer ./mrreducer.py -input mrdata -output mrout2
+   23  hadoop fs -ls mrout2
+   24  hadoop fs -cat mrout2/part-00000
+   25  mrout2/part-00006
+   26  hadoop fs -cat mrout2/part-00006
+   27  clear
+   28  history
+   29  history > mycommands.txt
